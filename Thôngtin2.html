@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAYOUT</title>
+    <meta charset="utf-8" />
+    <link href="css/media.css" rel="stylesheet" />
+    <style>
+        article{
+    min-height: 400px;
+    width:75%;
+    background-color: white;
+    float:left;
+}
+.form-group{
+    margin:10px 0px;
+}
+.form-control{
+    width: 98%;
+    padding:5px;
+    outline:none;
+    border:1px solid gray;
+    border-radius:3px;
+}
+.form-button:disabled{
+    color: darkgray;
+    box-shadow: inset 0 0 20px gray;
+}
+.form-group label{
+    font-weight:bold;
+    font-variant:small-caps;
+}
+.form-control:focus{
+    background-color:yellow;
+    box-shadow:0 0 3px red;
+    border:1px solid yellow;
+}
+.form-button{
+    padding:8px 30px;
+    outline:none;
+    border:none;
+    border-radius:20px;
+    font-weight:bold;
+    background-color:white;
+    color:orangered;
+    box-shadow:inset 0 0 20px blue;
+}
+.form-button:hover{
+    color:blue;
+    box-shadow: 0 0 20px orangered;
+}
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        
+        <header>
+        <div class="container">
+        <div class="company-info">
+            <h2>FPT Polytechnic</h2>
+            <h3>Thực học-Thực nghiệp</h3>
+        </div>
+        <div class="top-right">
+            <a href="đăngnhập.html">Đăng nhập </a> |
+            <a href="đăngkí.html">Đăng kí </a> |
+            <a href="#">Quên mật khẩu</a>
+        </div>
+        </div>
+        </header>
+        <nav>
+            <ul class="hmenu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a>
+                    <ul class="sub-menu">
+                        <li><a href="Thôngtin1.html">Thông tin 1</a></li>
+                        <li><a href="Thôngtin2.html">Thông tin 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Góp ý</a>
+                    <ul class="sub-menu">
+                        <li><a href="Bang1.html">Bảng 1</a></li>
+                        <li><a href="Bang2.html">Bảng 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hỏi & đáp</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <form>
+                    <div class="form-group">
+                        <label><strong>Họ và tên:</strong></label><br/>
+                        <input class="form-control" tabindex="1" />
+                    </div>
+                    <div class="form-group">
+                     <label><strong>Quốc tịch:</strong></label>
+                         <input class="form-control" value="Việt Nam" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Ghi chú</strong></label><br/>
+                        <textarea class="form-control"  row="5" cols="40" tabindex="2" tabindex="2"></textarea>
+                    </div>
+                    <hr/>
+                    <div class="form-group">
+                        <button class="form-button" tabindex="3">Thêm</button>
+                        <button class="form-button" tabindex="4">Sửa</button>
+                        <button class="form-button" disabled>Xóa</button>
+                    </div>
+                 </form>
+            </article>
+            <aside>
+                <ul class="vmenu">
+                    <li><a href="#">Máy tính xách tay</a></li>
+                    <li><a href="#">Điện thoại di động</a></li>
+                    <li><a href="#">Máy quay phim</a></li>
+                    <li><a href="#">Máy chụp ảnh</a></li>
+                </ul>
+            </aside>
+        </section>
+        <footer>FPT Polytechnic © 2017. All rights reserved.</footer>
+    </div>
+</body>
+</html>

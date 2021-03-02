@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAYOUT</title>
+    <meta charset="utf-8" />
+    <link href="css/media.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="page">
+        
+        <header>
+        <div class="container">
+        <div class="company-info">
+            <h2>FPT Polytechnic</h2>
+            <h3>Thực học-Thực nghiệp</h3>
+        </div>
+        <div class="top-right">
+            <a href="đăngnhập.html">Đăng nhập </a> |
+            <a href="đăngkí.html">Đăng kí </a> |
+            <a href="#">Quên mật khẩu</a>
+        </div>
+        </div>
+        </header>
+        <nav>
+            <ul class="hmenu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a>
+                    <ul class="sub-menu">
+                        <li><a href="Thôngtin1.html">Thông tin 1</a></li>
+                        <li><a href="Thôngtin2.html">Thông tin 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Góp ý</a>
+                    <ul class="sub-menu">
+                        <li><a href="Bang1.html">Bảng 1</a></li>
+                        <li><a href="Bang2.html">Bảng 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hỏi & đáp</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h2>Đăng kí</h2>
+                <form action="Register.php"
+                     method="post" enctype="multipart/form-data">
+                     <label><strong>Họ và tên:</strong></label><br />
+                     <input name="id" type="text" /><br />
+             <br/>
+                     <label><strong>Giới tính:</strong></label>
+                     <label><input name="gender" type="radio" checked/>Nam</label>
+                     <label><input name="gender" type="radio"/>Nữ</label></br>
+             <br/>
+                     <label><strong>Hình ảnh:</strong></label><br/>
+                     <input name="photo" type="file" /><br/>
+             <br/>
+                     <label><strong>Quốc tịch:</strong></label><br/>
+                     <select>
+                         <option>Việt Nam</option>
+                         <option>Japan</option>
+                         <option>Mỹ</option>
+                         <option>Canada</option>
+                     </select><br/>
+             <br/>
+             <div>
+                     <label><strong>Sở thích:</strong></label><br/>
+                     <input name="hobby" type="checkbox" value="1"/>Thể thao</label>
+                     <input name="hobby" type="checkbox" checked value="2"/>Du lịch</label>
+                     <input name="hobby" type="checkbox" value="3"/>Âm nhạc</label>
+                     <input name="hobby" type="checkbox" value="4"/>Ẩm thực</label>
+             </div><br/>
+                      <label><strong>Ghi chú:</strong></label></br>
+                      <textarea row="5" cols="40"></textarea>
+                      <hr/>
+                      <button type="submit">Đăng kí</button>
+                      <button type="reset">Nhập lại</button>
+                 </form>    
+            </article>
+            <aside>
+                <ul class="vmenu">
+                    <li><a href="#">Máy tính xách tay</a></li>
+                    <li><a href="#">Điện thoại di động</a></li>
+                    <li><a href="#">Máy quay phim</a></li>
+                    <li><a href="#">Máy chụp ảnh</a></li>
+                </ul>
+            </aside>
+        </section>
+        <footer>FPT Polytechnic © 2017. All rights reserved.</footer>
+    </div>
+</body>
+</html>

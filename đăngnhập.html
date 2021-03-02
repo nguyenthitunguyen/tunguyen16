@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAYOUT</title>
+    <meta charset="utf-8" />
+    <link href="css/media.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="page">
+        
+        <header>
+        <div class="container">
+        <div class="company-info">
+            <h2>FPT Polytechnic</h2>
+            <h3>Thực học-Thực nghiệp</h3>
+        </div>
+        <div class="top-right">
+            <a href="đăngnhập.html">Đăng nhập </a> |
+            <a href="đăngkí.html">Đăng kí </a> |
+            <a href="#">Quên mật khẩu</a>
+        </div>
+        </div>
+        </header>
+        <nav>
+            <ul class="hmenu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a>
+                    <ul class="sub-menu">
+                        <li><a href="Thôngtin1.html">Thông tin 1</a></li>
+                        <li><a href="Thôngtin2.html">Thông tin 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Góp ý</a>
+                    <ul class="sub-menu">
+                        <li><a href="Bang1.html">Bảng 1</a></li>
+                        <li><a href="Bang2.html">Bảng 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hỏi & đáp</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h2>Đăng nhập</h2>
+                    <form action="Register.php"
+                          method="post" enctype="multipart/form-data">
+                          <label>User Name:</label><br />
+                          <input name="id" type="text" /><br />
+                          <label>Password:</label><br />
+                          <input name="Password" type="password" /><br />
+                          <input name="checkbox" type="checkbox" />
+                          <label>Remember me?</label> <hr/>
+                          <button type="submit">Login</button>
+                    </form>
+            </article>
+            <aside>
+                <ul class="vmenu">
+                    <li><a href="#">Máy tính xách tay</a></li>
+                    <li><a href="#">Điện thoại di động</a></li>
+                    <li><a href="#">Máy quay phim</a></li>
+                    <li><a href="#">Máy chụp ảnh</a></li>
+                </ul>
+            </aside>
+        </section>
+        <footer>FPT Polytechnic © 2017. All rights reserved.</footer>
+    </div>
+</body>
+</html>
